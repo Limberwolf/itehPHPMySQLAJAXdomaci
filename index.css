@@ -1,0 +1,46 @@
+#naslov {
+    margin-top: 30px;
+}
+
+#div-tbl-pocetna {
+    margin-top: 25px;
+    width: 80%;
+    margin-left: 200px;
+}
+
+
+#id-col {
+    width: 20px;
+}
+
+#tip-col {
+    width: 50px;
+}
+
+#rasa-col {
+    width: 50px;
+}
+
+#ime-col {
+    width: 70px;
+}
+
+#godine-col {
+    width: 30px;
+}
+
+#boja-col {
+    width: 30px;
+}
+
+#imev-col {
+    width: 50px;
+}
+
+#prezime-col {
+    width: 50px;
+}
+
+#izmena-brisanje {
+    width: 50px;
+}
