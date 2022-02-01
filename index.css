@@ -48,7 +48,7 @@
     margin-top: 25px;
     height: 50px;
     width: 250px;
-    margin-left: 45%;
+    margin-left: 43%;
 }
 
 #forma-novi-ljubimac {
@@ -61,4 +61,12 @@
 #pocetna-btn {
     margin-top: 30px;
     margin-left: 45%;
+}
+
+#forma-izmena-ljubimac {
+    width: 15%;
+    margin-left: 42%;
+    margin-top: 2%;
+    margin-bottom: 50px;
+    text-align: center;
 }
