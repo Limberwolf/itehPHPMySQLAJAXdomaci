@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,23 +38,30 @@
         <div class="mb-3">
             <label class="form-label">Vlasnik: </label>
             <select class="form-select text-center" name="select-vlasnik">
+
                 <?php
                 require 'db.php';
+
                 $db = new DB();
                 $upit = "select * from vlasnik";
                 $result_set = $db->connection->query($upit);
+
                 while ($vlasnik = mysqli_fetch_array($result_set)) :
                 ?>
-                   <option value="<?php echo $vlasnik['id'] ?>"><?php echo $vlasnik['imev'] . " " . $vlasnik['prezime']; ?></option>
+                    <option value="<?php echo $vlasnik['id'] ?>"><?php echo $vlasnik['imev'] . " " . $vlasnik['prezime']; ?></option>
                 <?php
                 endwhile;
                 ?>
+
             </select>
         </div>
         <button type="submit" class="btn btn-lg btn-success mt-2" name="dodaj_ljubimca_btn">Submit</button>
     </form>
+
+
     <?php
     require 'Ljubimac.php';
+
     if (isset($_POST["dodaj_ljubimca_btn"])) {
         $ljubimac = new Ljubimac(NULL, $_POST['tip'], $_POST['rasa'], $_POST['ime'], $_POST['godine'], $_POST['boja'], $_POST['select-vlasnik']);
         if ($ljubimac->dodajNovog($ljubimac)) {
@@ -63,11 +71,15 @@
         }
     }
     ?>
+
+
     <script>
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);
         }
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+
 </html>

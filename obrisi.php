@@ -1,4 +1,4 @@
-<?php
+ <?php
     include 'db.php';
 
     $db = new DB();
@@ -8,13 +8,13 @@
     $upit2 = "select ljub.id, ljub.tip, ljub.ime, ljub.rasa, ljub.ime, ljub.godine, ljub.boja, vl.imev, vl.prezime 
                     from ljubimac ljub join vlasnik vl on ljub.vlasnik_id = vl.id order by ljub.id asc";
 
-     $data_set = $db->connection->query($upit2);
-         if (!$data_set) {
-         printf("Error: %s\n", mysqli_error($db->connection));
-         exit();
-                    }
+    $data_set = $db->connection->query($upit2);
+    if (!$data_set) {
+        printf("Error: %s\n", mysqli_error($db->connection));
+        exit();
+    }
 
-      while ($ljubimac = mysqli_fetch_array($data_set)) :
+    while ($ljubimac = mysqli_fetch_array($data_set)) :
     ?>
      <tr>
          <td><?php echo $ljubimac['id'] ?></td>

@@ -2,7 +2,6 @@ $(function () {
     obrisi();
     izmena();
     $('#ljubimci-table').DataTable();
-    
 });
 
 
@@ -51,5 +50,4 @@ function izmena() {
 
     })
 
-
-} 
+}
