@@ -8,7 +8,6 @@
     margin-left: 200px;
 }
 
-
 #id-col {
     width: 20px;
 }
@@ -43,4 +42,17 @@
 
 #izmena-brisanje {
     width: 50px;
+}
+
+#btn_novi_ljubimac {
+    margin-left: 45%;
+    margin-top: 15px;
+    height: 50px;
+}
+
+#forma-novi-ljubimac {
+    width: 15%;
+    margin-left: 40%;
+    margin-top: 5%;
+    text-align: center;
 }
