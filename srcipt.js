@@ -1,6 +1,7 @@
 $(function () {
     obrisi();
     izmena();
+    $('#ljubimci-table').DataTable();
 });
 
 
