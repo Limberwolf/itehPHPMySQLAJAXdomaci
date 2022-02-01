@@ -57,7 +57,6 @@
                 endwhile;
                 ?>
 
-
             </tbody>
         </table>
     </div>

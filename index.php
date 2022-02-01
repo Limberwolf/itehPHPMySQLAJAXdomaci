@@ -61,6 +61,7 @@
         </table>
 
         <a href="pretragasort.php"><button type="button" class="btn btn-success" id="btn_pretraga_sort">Pretrazi / Sortiraj</button></a>
+
         
     </div>
     <div id="forma-izmena" class="collapse">
